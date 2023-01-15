@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.ui.activities.ExploreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_explore_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue_gradient"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/monumatic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/monumatic_logo_final_rbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/toolbar_home_fragment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/txtExploreIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/acme"
+            android:text="@string/explore_india"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_explore_fragment" />
+
+
+        <Button
+            android:id="@+id/exploretouristdestinations_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/blue_gradient"
+            android:elevation="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:stateListAnimator="@null"
+            android:text="@string/start_exploring"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtExploreIndia" />
+
+        <TextView
+            android:id="@+id/textViewPopularDestinations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/most_popular_destinations"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/exploretouristdestinations_button"
+            app:layout_constraintTop_toBottomOf="@+id/exploretouristdestinations_button" />
+
+
+        <TextView
+            android:id="@+id/seetouristdestinations_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/see_all"
+            android:textColor="@color/blue_gradient_dark"
+            android:textColorLink="@color/blue_gradient_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewPopularDestinations"
+            app:layout_constraintEnd_toEndOf="@+id/exploretouristdestinations_button"
+            app:layout_constraintTop_toTopOf="@+id/textViewPopularDestinations" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/touristdestinations_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPopularDestinations" />
+
+        <TextView
+            android:id="@+id/mostfamousmonuments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/most_famous_monuments"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/exploretouristdestinations_button"
+            app:layout_constraintTop_toBottomOf="@+id/touristdestinations_recyclerview" />
+
+        <TextView
+            android:id="@+id/seetouristattractions_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/see_all"
+            android:textColor="@color/blue_gradient_dark"
+            android:textColorLink="@color/blue_gradient_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mostfamousmonuments"
+            app:layout_constraintEnd_toEndOf="@+id/exploretouristdestinations_button"
+            app:layout_constraintTop_toTopOf="@+id/mostfamousmonuments" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/touristattractions_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostfamousmonuments" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

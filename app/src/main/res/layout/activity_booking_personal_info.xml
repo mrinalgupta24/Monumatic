@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.ui.activities.BookingPersonalInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue_gradient"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_back_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/baloo"
+                android:text="PERSONAL INFO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_personal_info">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="@string/name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Age"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Phone No."
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:drawableEnd="@drawable/ic_baseline_local_phone_24"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Gender"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dropdown_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/color_edit_text"
+                        android:fontFamily="@font/secular_one"
+                        android:inputType="none"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        android:text="Male"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Address"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableEnd="@drawable/ic_baseline_gps_fixed_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Country"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:drawableEnd="@drawable/ic_baseline_address_on_24"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Nationality"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dropdown_nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/color_edit_text"
+                        android:fontFamily="@font/secular_one"
+                        android:inputType="none"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        android:text="Indian"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/parking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Parking"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dropdown_parking"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/color_edit_text"
+                        android:fontFamily="@font/secular_one"
+                        android:inputType="none"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        android:text="None"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txt_date_of_visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Date Of Visit"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/show_dateOfVisit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                    android:fontFamily="@font/secular_one"
+                    android:gravity="left"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="26dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="26dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/dateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="48dp"
+                    android:backgroundTint="@color/color_edit_text"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:text="Choose The Date"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginRight="84dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:foregroundGravity="center_horizontal"
+                    android:text="Next"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

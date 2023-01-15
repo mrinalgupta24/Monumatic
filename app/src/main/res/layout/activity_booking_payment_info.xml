@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.ui.activities.BookingPaymentInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_payment_info"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue_gradient"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_back_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/baloo"
+                android:text="PAYMENT INFO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_payment_info">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="BILLING DETAILS"
+                android:textColor="#1976D2"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_monumentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="@string/monument_name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/monumentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="@string/nationality"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pernationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_bookingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Booking Date"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bookingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/txt_ticketPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Ticket Price"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ticketPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_parking_Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Parking Price"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/parkingPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="@string/name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Age"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Phone No."
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Country"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:text="CARD DETAILS"
+                    android:textColor="#1976D2"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/txt_cardHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Card Holder Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/cardHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_cardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Card Number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/cardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_CVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="CVV"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/CVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_expire_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:fontFamily="@font/secular_one"
+                    android:hint="Expire Date"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/expireDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/color_edit_text"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/secular_one"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginRight="84dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/baloo"
+                    android:foregroundGravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

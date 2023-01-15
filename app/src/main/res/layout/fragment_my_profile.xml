@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.ui.fragments.MyProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <FrameLayout
+            android:id="@+id/fl_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iv_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                android:src="@drawable/background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/baloo"
+                android:text="CONTACT US"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_user_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/fl_header_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-75dp">
+
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_placeholder" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_background" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/tvAddressDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:text="JIMS VK" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddressDetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="Phone" />
+
+        <TextView
+            android:id="@+id/tvPhoneDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:text="+91 000 000 0000" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPhoneDetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/tv_email_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:text="shubham_monumatic@outlook.com" />
+
+
+        <Button
+            android:id="@+id/btn_needHelp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/blue_gradient_dark"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Support Desk"
+            android:layout_below="@id/tv_email_detail"/>
+
+        <TextView
+            android:id="@+id/tv_needHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/secular_one"
+            android:padding="@dimen/clickable_text_view_padding"
+            android:text="Need Help? Just Contact Us "
+            android:textColor="@color/blue_gradient_dark"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/btn_needHelp"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

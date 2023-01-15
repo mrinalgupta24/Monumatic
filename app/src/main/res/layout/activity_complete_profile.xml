@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.ui.activities.CompleteProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_complete_profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue_gradient"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/baloo"
+                android:text="COMPLETE PROFILE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="@string/name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:inputType="text"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="User Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:inputType="text"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="@string/et_hint_email_id"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_mail_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="Phone No."
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_local_phone_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="Date Of Birth"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_dob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="Address"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_gps_fixed_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="Aadhar/Passport"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_book_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginRight="48dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="SAVE"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

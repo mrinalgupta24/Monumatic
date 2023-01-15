@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_gradient"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".activities.ui.ui.activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/monumatic_logo_final_rbg"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/card_background"
+        android:elevation="36dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/login_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="@string/et_hint_email_id"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_mail_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:hint="abc@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/secular_one"
+                android:hint="@string/et_hint_password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_edit_text"
+                android:drawableEnd="@drawable/ic_baseline_lock_24"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/secular_one"
+                android:hint="******"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="48dp"
+                android:fontFamily="@font/secular_one"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/clickable_text_view_padding"
+                android:text="@string/lbl_forgot_password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/forgot_password_textSize" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/blue_gradient"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="@string/login_btn"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dont_have_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/secular_one"
+                android:padding="@dimen/clickable_text_view_padding"
+                android:text="@string/don_t_have_an_account"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/secular_one"
+                android:padding="@dimen/clickable_text_view_padding"
+                android:text="@string/register"
+                android:textColor="@color/blue_gradient_dark"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

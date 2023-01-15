@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Monumatic</string>
+    <string name="title_login">login</string>
+    <string name="et_hint_email_id">Email ID</string>
+    <string name="content_desc">image</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="login_text">LOGIN</string>
+    <string name="hint_email">example123@gmail.com</string>
+    <string name="txt_email">Email ID</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="hint_password">*************</string>
+    <string name="app_name_monumatic">MONUMATIC</string>
+    <string name="check_remember_me">Remember Me</string>
+    <string name="create_an_account">CREATE AN ACCOUNT</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree_to_the_terms_condition"><![CDATA[I Agree To The Terms & Condition]]></string>
+    <string name="register_btn">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+
+    <string name="err_msg_enter_first_name">Please enter your name.</string>
+    <string name="err_msg_enter_email">Please enter email.</string>
+    <string name="err_msg_enter_password">Please enter password.</string>
+    <string name="err_msg_enter_confirm_password">Please enter confirm password.</string>
+    <string name="err_msg_password_and_confirm_password_mismatch">Password and confirm password does not match.</string>
+    <string name="err_msg_agree_terms_and_condition">Please agree terms and condition.</string>
+    <string name="success_registration">Registration Successful.</string>
+    <string name="success_login">Login Successful.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Home Fragment</string>
+    <string name="submit">SUBMIT</string>
+    <string name="home">Home</string>
+    <string name="my_profile">Profile</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="qr_scanner_fragment">QR Scanner Fragment</string>
+    <string name="my_profile_fragment">My Profile Fragment</string>
+    <string name="monumatic">Monumatic</string>
+    <string name="plan_a_trip">Plan A Trip !</string>
+    <string name="search_for_any_monument">Search For Any Monument</string>
+    <string name="most_famous_monuments">Most Famous Monuments</string>
+    <string name="explore">Explore</string>
+    <string name="map">Map</string>
+    <string name="all_trips">All Trips</string>
+    <string name="most_popular_destinations">Most Popular Destinations</string>
+    <string name="uttar_pradesh">Uttar Pradesh</string>
+    <string name="new_delhi">New Delhi</string>
+    <string name="bengaluru">Bengaluru</string>
+    <string name="gujarat">Gujarat</string>
+    <string name="maharashtra">Maharashtra</string>
+    <string name="agra">Agra</string>
+    <string name="main_attractions">Main Attractions</string>
+    <string name="_4_famous_attractions">4+ Famous Attractions</string>
+    <string name="india_begins_here">India Begins Here</string>
+    <string name="see_location_in_google_maps">See Location in Google Maps</string>
+    <string name="punjab">Punjab</string>
+    <string name="the_golden_temple">The Golden Temple</string>
+    <string name="west_bengal">West Bengal</string>
+    <string name="rajasthan">Rajasthan</string>
+    <string name="tamil_nadu">Tamil Nadu</string>
+    <string name="haryana">Haryana</string>
+    <string name="dildaar_dilli">Dildaar Dilli</string>
+    <string name="india_gate">India Gate</string>
+    <string name="u_p_nahi_dekha_toh_india_nahi_dekha">U.P. Nahi Dekha Toh India Nahi Dekha</string>
+    <string name="taj_mahal">Taj Mahal</string>
+    <string name="be_u">Be U\'</string>
+    <string name="tipu_sultan_fort">Tipu Sultan Fort</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="gateway_of_india">Gateway Of India</string>
+    <string name="vibrant_gujarat">Vibrant Gujarat</string>
+    <string name="buddhist_cave">Buddhist Cave</string>
+    <string name="beautiful_bengal">Beautiful Bengal</string>
+    <string name="victoria_memorial">Victoria Memorial</string>
+    <string name="padharo_mhare_desh">Padharo Mhare Desh</string>
+    <string name="chittorgarh_fort">Chittorgarh Fort</string>
+    <string name="enchanting_tamil_nadu">Enchanting Tamil Nadu</string>
+    <string name="a_pioneer_in_highway_tourism">A Pioneer In Highway Tourism</string>
+    <string name="surajkund">Surajkund</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="explore_india">Explore India!</string>
+    <string name="start_exploring">Start Exploring</string>
+    <string name="see_all">See All</string>
+    <string name="delhi">Delhi</string>
+    <string name="all_popular_destinations">ALL POPULAR DESTINATIONS</string>
+    <string name="hawa_mahal">Hawa Mahal</string>
+    <string name="arjun_chariot">Arjun Chariot</string>
+    <string name="star_monument">Star Monument</string>
+    <string name="trip_duration">Trip Duration</string>
+    <string name="rating">Rating</string>
+    <string name="_7_days">7 days</string>
+    <string name="about_india_gate">The India Gate is a War Memorial located near the Rajpath on the Eastern Edge of the Ceremonial Axis of New Delhi, formerly called duty path.</string>
+    <string name="about_the_monument">About The Monument</string>
+    <string name="about_golden_temple">The Golden temple is famous for its full golden dome, it is one of the most sacred pilgrim spots for Sikhs. The Mandir is built on a 67-ft square of marble and is a two storied structure.</string>
+    <string name="_6_days">6 Days</string>
+    <string name="about_victoria_memorial">The Victoria Memorial is a large marble building on the Maidan in Central Kolkata, built between 1906 and 1921. It is dedicated to the memory of Queen Victoria, Empress of India from 1876 to 1901.</string>
+    <string name="about_hawa_mahal">The Hawa Mahal is a palace in the city of Jaipur, India. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur, and extends to the Zenana, or women\'s chambers.</string>
+    <string name="about_arjun_chariot">Arjuna Ratha is a monument from the Pallava Period at Mahabalipuram, on the Coromandel Coast of the Bay of Bengal, in Kancheepuram district of Tamil Nadu, India.</string>
+    <string name="about_star_monument">A magnificent architecture, star monument is the Samadhi Sthal of 5th Radha Swami Guru, Shri Param Sant Tarachandji Maharaj who is renowned as Bade Maharaj ji. This hexagonal structure is constructed in star shape at the elevated height of 6 feet from ground.</string>
+    <string name="all_tourist_destinations">All Tourist Destinations</string>
+    <string name="about_qutab_minar">The Qutab Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and Victory Tower that forms part of the Qutb complex, which lies at the site of Delhi’s oldest fortified city</string>
+    <string name="about_akshardham_temple">Swaminarayan Akshardham is a Hindu temple, and spiritual-cultural campus in Delhi, India. The temple is close to the border with Noida. Also referred to as Akshardham Temple or Akshardham Delhi, the complex displays millennia of traditional and modern Hindu culture, spirituality, and architecture</string>
+    <string name="about_humayun_tomb">Humayun\'s tomb is the tomb of the Mughal Emperor Humayun in Delhi, India. The tomb was commissioned by Humayun\'s first wife and chief consort, Empress Bega Begum under her patronage, in 1558, and designed by Mirak Mirza Ghiyas and his son, Sayyid Muhammad, Persian architects chosen by her.</string>
+    <string name="about_jallianwala_bagh">Jallianwala Bagh is a 6.5-acre public garden which holds national importance. It stands as a memorial to all those who lost their lives during the open-fire by notorious General Dyer. Get in through the narrow, and the only entrance to the park and walk through the memorial monuments, gallery and the killer well to imagine what that day would have been like.</string>
+    <string name="about_quila_mubarak">The Qila Mubarak complex is one of the famous tourist destinations in Patiala which stands in 10-acre ground with the main palace, guest house and the Darbar Hall in the heart of the city. The architectural style is a mixture of late Mughal and Rajasthani of this palace. The Fort is believed to be the main residence of Patiala Royals until the construction of ancient Moti Bagh Palace.</string>
+    <string name="about_taj_mahal">The Taj Mahal, is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1631 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</string>
+    <string name="about_agra_fort">The Agra Fort is a historical fort in the city of Agra in India also known as the Red Fort. Rebuilt by the Mughal emperor Akbar in 1565 and completed in 1573, it served as the main residence of the rulers of the Mughal Dynasty until 1638, when the capital was shifted from Agra to Delhi.</string>
+    <string name="about_fatehpur_sikri">Fatehpur Sikri is a small city in northern India, just west of Agra, founded by a 16th-century Mughal emperor. Red sandstone buildings cluster at its center. Buland Darwaza gate is the entrance to Jama Masjid mosque. Nearby is the marble Tomb of Salim Chishti. Diwan-E-Khas hall has a carved central pillar.</string>
+    <string name="about_akbar_tomb">Akbar\'s tomb is the tomb of the Mughal emperor Akbar. It was built in 1605–1613 by his son, Jahangir and is situated on 119 acres of grounds in Sikandra, a sub of Agra, Uttar Pradesh, India.</string>
+    <string name="about_tipu_sultan_fort">Srirangapatna Fort is a historical fort located in Srirangapatna, the historical capital city of the Kingdom of Mysore in present-day South Indian state of Karnataka. Built by the Timmanna Nayaka in 1454, the fort was modified by later rulers and fully fortified in the late 18th century with the help of French architects.</string>
+    <string name="about_bengaluru_fort">Bangalore Fort began in 1537 as a mud fort. The builder was Kempe Gowda I, a vassal of the Vijaynagar Empire and the founder of Bangalore. Hyder Ali in 1761 replaced the mud fort with a stone fort and it was further improved by his son Tipu Sultan in the late 18th century.t</string>
+    <string name="about_bangalore_palace">Bangalore Palace is a royal palace located in Bangalore, Karnataka, India, in an area that was owned by Rev. J. Garrett, the first principal of the Central High School in Bangalore, now famous as Central College. The commencement of the construction of the palace is attributed to him.</string>
+    <string name="about_lalbagh_garden">Lalbagh Botanical Garden or simply Lalbagh, is an botanical garden in Bangalore, India, with an over 200-year history. First planned and laid out during the dalavaiship of Hyder Ali and later managed under numerous British Superintendents before Indian Independence.</string>
+    <string name="about_gateway_of_india">The Gateway of India is an arch-monument built in the early 20th century in the city of Bombay, India. It was erected to commemorate the landing of King-Emperor George V, the first British monarch to visit India, in December 1911 at Strand Road near Wellington Fountain.</string>
+    <string name="about_shivaji_vastu">Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, originally named Prince of Wales Museum of Western India, is a museum in Bombay which documents the history of India from prehistoric to modern times.</string>
+    <string name="about_ellora_caves">Ellora is a UNESCO World Heritage Site located in the Aurangabad district of Maharashtra, India. It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE.</string>
+    <string name="about_buddhist_caves">Junagadh Buddhist Cave Groups are located in Junagadh district of the Indian state of Gujarat. These caves group includes Uparkot Caves, Khapra Kodiya Caves and Baba Pyare Caves. The so-called Buddhist Caves are not actually caves, but three separate sites of rooms carved out of stone to be used as monks\' quarters.</string>
+    <string name="about_ashokan_rocks">The Major Rock Edicts of Indian Emperor Ashoka refer to 14 separate major Edicts of Ashoka which are significantly detailed and represent some of the earliest dated rock inscriptions of any Indian monarch. These edicts are preceded chronologically by the Minor Rock Edicts.</string>
+    <string name="about_rani_ki_rav">Rani Ki Vav is a stepwell situated in the town of Patan in Gujarat, India. It is located on the banks of the Saraswati River.</string>
+    <string name="about_sun_temple">The Sun Temple of Modhera is a Hindu temple dedicated to the solar deity Surya located at Modhera village of Mehsana district, Gujarat, India. It is situated on the bank of the river Pushpavati. It was built after 1026-27 CE during the reign of Bhima I of the Chaulukya dynasty.</string>
+    <string name="about_victorial_memorial">The Victoria Memorial is a large marble building on the Maidan in Central Kolkata, built between 1906 and 1921. It is dedicated to the memory of Queen Victoria, Empress of India from 1876 to 1901.</string>
+    <string name="about_marble_palace">Marble Palace is a palatial nineteenth-century mansion in North Kolkata. It is located at 46, Muktaram Babu Street, Kolkata 700007. It is one of the best-preserved and most elegant houses of nineteenth-century Calcutta.</string>
+    <string name="about_indian_museum">The Indian Museum in Central Kolkata, West Bengal, India, also referred to as the Imperial Museum at Calcutta in colonial-era texts, is the ninth oldest museum in the world, the oldest and largest museum in India.</string>
+    <string name="about_hazarduari_palace">Hazarduari Palace, earlier known as the Bara Kothi, is located in the campus of Kila Nizamat in Murshidabad, in the Indian state of West Bengal. It is situated near the bank of river Ganges.</string>
+    <string name="about_chittorgarh_fort">The Chittorgarh, also known as Chittod Fort, is one of the largest forts in India. It is a UNESCO World Heritage Site. The fort was the capital of Mewar and is located in the present-day city of Chittorgarh.</string>
+    <string name="title_activity_jaisalmer_fort_visit">JaisalmerFortVisitActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="about_jaisalmer_fort">Mukteshwara Temple is a 10th-century Hindu temple dedicated to Shiva located in Bhubaneswar, Odisha, India. The temple dates back to 950–975 CE and is a monument of importance in the study of the development of Hindu temples in Odisha.</string>
+    <string name="about_yudhisthar_chariot">Dharmaraja Ratha is a monument in the Pancha Rathas complex at Mahabalipuram, on the Coromandel Coast of the Bay of Bengal, in the Kancheepuram district of the state of Tamil Nadu, India. It is an example of monolith Indian rock-cut architecture.</string>
+    <string name="about_valluvar_kottam">The Valluvar Kottam Monument is the memorial monument of the Tamil poet Thiruvalluvar who wrote the famous Thirukkural. This chariot-shaped memorial is 128 feet tall, and it’s a replica of the temple chariot in Thiruvarur</string>
+    <string name="about_surajkund">Surajkund (literal meaning is \'Lake of the Sun\') is an artificial Kund (‘Kund’ means lake or reservoir) built in the backdrop of the Aravalli hills with an amphitheatre-shaped embankment constructed in semicircular form. It is said to have been built by the Tomar king Suraj Pal of Tomar dynasty in the 10th century.</string>
+    <string name="about_muktesvara_temple">Mukteshwara Temple is a 10th-century Hindu temple dedicated to Shiva located in Bhubaneswar, Odisha, India. The temple dates back to 950–975 CE and is a monument of importance in the study of the development of Hindu temples in Odisha.</string>
+    <string name="about_lakharpur">Sheikh Chilli\'s Tomb is complex of structures located in Thanesar, in the Kurukshetra district of Haryana, India. It includes two tombs, a madrasa, Mughal gardens and various subsequent features.</string>
+    <string name="about_qutub_khan_tomb">AAdham Khan\'s Tomb is the 16th-century tomb of Adham Khan, a general of the Mughal Emperor Akbar. He was the younger son of Maham Anga, Akbar\'s wet nurse thus also his foster brother.</string>
+    <string name="monument_name">Monument Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="confirm_text">Your Ticket Shall Be downloaded automatically.\nYou will recieve an e-mail confirmation shortly.</string>
+    <string name="continue_travel">Continue Travel</string>
+    <string name="view_summary">View Summary</string>
+    <string name="no_booking_placed_yet">No Booking Placed Yet</string>
+    <string name="the_ajanta_caves_are_approximately_thirty_rock_cut_buddhist_cave_monuments_dating_from_the_second_century_bce_to_about_480_ce_in_the_aurangabad_district_of_maharashtra_state_in_india">The Ajanta Caves are approximately thirty rock-cut Buddhist cave monuments dating from the second century BCE to about 480 CE in the Aurangabad district of Maharashtra state in India.</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="nationality">
+        <item>Indian</item>
+        <item>NRI</item>
+    </string-array>
+
+    <string-array name="parking">
+        <item>None</item>
+        <item>Car</item>
+        <item>Bike</item>
+    </string-array>
+
+</resources>

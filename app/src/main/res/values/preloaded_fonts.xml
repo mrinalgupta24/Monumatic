@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/akaya_telivigala</item>
+        <item>@font/alata</item>
+        <item>@font/aleo</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/almendra_bold_italic</item>
+        <item>@font/arvo_bold</item>
+        <item>@font/baloo</item>
+        <item>@font/bentham</item>
+        <item>@font/bubblegum_sans</item>
+        <item>@font/chewy</item>
+        <item>@font/lato_black</item>
+        <item>@font/poppins</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/poppins_extrabold</item>
+        <item>@font/poppins_thin</item>
+        <item>@font/secular_one</item>
+    </array>
+</resources>
